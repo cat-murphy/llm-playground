@@ -53,8 +53,7 @@ PUT YOUR ANSWER HERE.
 Now it's your turn: find a story that you wrote or are very familiar with that's published online, and try the same process, altering the command and then evaluating the result.
 
 ```bash
-
-
+python -m newspaper --url=https://quchronicle.com/85766/featured/quinnipiac-hedge-funds-cayman-islands/ -of=text | llm -m groq/openai/gpt-oss-120b "summarize this story in 3 paragraphs" > chron_summary.txt
 ```
 
 YOUR EVALUATION HERE.
