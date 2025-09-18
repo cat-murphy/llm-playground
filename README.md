@@ -71,7 +71,7 @@ That "no yapping" thing? That's one of the ways you get LLMs to stop narrating t
 Now it's your turn: find a short (3 pages or less) news story that contains unstructured text, save it as a text file and drop it into the list of files on the left side. Then create a prompt like the one above that turns some elements of it into structured data. Put your prompt in the space below, and below that tell me how the LLM did.
 
 ```bash
-cat dhs_foias.txt | llm -m groq-llama-3.3-70b "produce only an array of JSON objects based on the text with the following keys: case number, date, requester, requester agency, date, description. The date should be in the yyyy-mm-dd format. No yapping." > dhs_foias_data.csv
+cat dhs_foias.txt | llm -m groq-llama-3.3-70b "produce a CSV file based on the text with the following columns: case number, date, requester name, requester agency, type of records requested, full description. the date should be in the yyyy-mm-dd format. no yapping." > dhs_foias_data.csv
 ```
 
 PUT YOUR EVALUATION HERE.
