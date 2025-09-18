@@ -48,7 +48,9 @@ python -m newspaper --url=https://cnsmaryland.org/2025/08/02/in-the-deep-woods-a
 
 Read the story: https://cnsmaryland.org/2025/08/02/in-the-deep-woods-a-little-owl-teaches-big-lessons/ and then compare that to the summary. Is the summary a good description? Why or why not?
 
-PUT YOUR ANSWER HERE.
+PUT YOUR ANSWER HERE: 
+    
+    OK, so when I first read over Groq’s summary in class — before reading Sade’s story, I should mention — I thought “Yeah, OK, seems fine.” But when I went back and read the original story, I noticed Groq’s summary is … um … a little “off.” For example, Groq says Longeveld’s saw-whet records provide “vital insight into their ecology and informing conservation strategies.” Ecology, yes. Conversation strategies, no. It guessed. It didn’t make it up. But it definitely tried to fill in some blank there, because the article simply doesn’t say that. (If I had to guess, I think it made that leap based on the fact that scientists used to think they were rare, and the article focuses on the importance of the dataset. The article never says anything about conservation, but I can see where it’s getting it.) Groq’s output has some other weird quirks, too. It spelled “banding” with a hyphen — as in, “band‑ing station” — the first time, then never again. It said scientists originally believed the birds were “sedentary,” which isn’t quite the right word. It said that “a first‑time bander such as student Grace” got to release the bird — also not quite the right syntax. That’s just it. In a lot of ways, the summary is fine. Generally speaking, it’s relatively accurate — it’s just weird. It’s slightly off. It’s like it’s almost there, but not quite. I mean, if you’ve read the article, you can tell this is AI. So that begs the question, how do we avoid that in our beat books? Is it a matter of better prompting? The training itself? Something else? No clue. Just spitballing here.
 
 Now it's your turn: find a story that you wrote or are very familiar with that's published online, and try the same process, altering the command and then evaluating the result.
 
@@ -57,6 +59,8 @@ python -m newspaper --url=https://quchronicle.com/85766/featured/quinnipiac-hedg
 ```
 
 YOUR EVALUATION HERE.
+
+    See, this summary was great. I wrote the article, and honestly, I don’t know that I could have written a better one. Groq highlighted the important details and explained the more complicated aspects of the story (quite well, actually), but it did so without droning on or adding interpretations. I didn’t love that it used the word “critics” to describe who was calling this out, but otherwise it used language that I thought matched the tone of the original text. I have a theory about this: My story was about as straight news as you can get. Very few quotes, basically just pure analysis and explanation. The one quote is from our PR guy, and Groq did a good job of basically being like, “the university claims that it doesn’t directly invest in fossil fuels, but these funds ensure it benefits from the industry, even if indirectly.” This is kind of the opposite of what Groq did with Sade’s story. But Sade’s profile was a soft news story and therefore included a lot more color. More quotes, more descriptions, more subjectivity. And we didn’t specify that Groq should prioritize the more concrete information, and I think that’s why the summary was a little “off.” So, going forward, I wonder if we have to devise a way to prompt the LLMs to summarize the story content separately from what people are saying.
 
 ### Restructuring Information
 
